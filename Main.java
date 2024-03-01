@@ -28,10 +28,6 @@ public class Main{
         //     System.out.println(userList.get(i).get_membership());
         // }
 
-
-        
-
-
        for (User u : User.admins){
            System.out.println(u.get_name());
            System.out.println(u.get_membership());
