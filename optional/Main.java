@@ -1,6 +1,7 @@
 package optional;
 
-import java.lang.reflect.Array;
+import optional.order.order;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -30,9 +31,10 @@ public class Main {
 
     private static List<Customer> createCustomerList() {
       List<Customer> customers = new ArrayList<>();
-      customers.add(new Customer(1L, "Noel", List.of(new order(100.00), new order(200.00))));
+        List<Order> order = new ArrayList<>();
+        order.add(new order(1L, "Product 1", 100.0));
+        customers.add(new Customer(1L, "Noel", order));
       return customers;
-        return new ArrayList<>();
     }
 }
 
